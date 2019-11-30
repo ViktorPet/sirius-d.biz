@@ -1,0 +1,3 @@
+[24-Nov-2019 20:35:09 Europe/Sofia] PHP Warning:  require(/home/siri5lyz/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home/siri5lyz/public_html/public/index.php on line 11
+[24-Nov-2019 20:35:09 Europe/Sofia] PHP Warning:  require(/home/siri5lyz/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home/siri5lyz/public_html/public/index.php on line 11
+[24-Nov-2019 20:35:09 Europe/Sofia] PHP Fatal error:  require(): Failed opening required '/home/siri5lyz/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/siri5lyz/public_html/public/index.php on line 11
