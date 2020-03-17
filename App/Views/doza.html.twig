@@ -1,0 +1,269 @@
+{% extends "layout.html.twig" %}
+
+{% block section_content %}
+<!--
+==================================================
+Header Section Start
+================================================== -->
+<header id="top-bar" class="navbar-fixed-top animated-header" style="background-color: #0cc1d8;">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <!-- responsive nav button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" onclick="lockScroll()">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- /responsive nav button -->
+
+            <!-- logo -->
+            <div class="navbar-brand">
+                <a href="/" >
+                    <img src="images/logo2.png" alt="">
+                </a>
+            </div>
+            <!-- /logo -->
+        </div>
+        <nav class="collapse navbar-collapse navbar-right" role="navigation">
+            <!-- <div class="main-menu">-->
+            <ul class="nav navbar-nav navbar-right" >
+                <li style="color: #4f46a1">
+                    <a href="/" class="btn btn-primary hover-item" >НАЧАЛО</a>
+                </li>
+                <li><a href="about" class="btn btn-primary hover-item">ДЕЙСТВИЕ</a></li>
+                <li><a href="siriusclub" class="btn btn-primary hover-item">СИРИУС-Д КЛУБ</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle btn btn-primary hover-item" data-toggle="dropdown">ДИАГНОСТИКА <span class="caret"></span></a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="aura-diagnosis">ЕНЕРГИЙНА с различни апаратури</a></li>
+                            <li><a href="bio-diagnosis">БИОРЕЗОНАНСНА НЕЛИНЕЙНА с Апарат "Нейро-Оберон"</a></li>
+                            <li><a href="iris-diagnosis">АПАРАТНА ИРИСОВА </a></li>
+                            <li><a href="radiestesia">РАДИЕСТЕЗИЧНА по различни методи </a></li>
+                            <li><a href="kv-analisator">КВАНТОВ АНАЛИЗАТОР БИОСКЕНЕР</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle btn btn-primary hover-item" data-toggle="dropdown">АЛТЕРНАТИВНА МЕДИЦИНА <span class="caret"></span></a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="en-harmony">ЕНЕРГИЙНО ХАРМОНИЗИРАНЕ</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+
+                <li><a href="doza" class="btn btn-primary hover-item">ДОЗИРАНЕ</a></li>
+                <li><a href="ceni"  class="btn btn-primary hover-item">ПОРЪЧКА</a></li>
+                <li><a href="otzivi"  class="btn btn-primary hover-item">ОТЗИВИ</a></li>
+
+                <li><a href="contact"  class="btn btn-primary hover-item">ЗА НАС</a></li>
+            </ul>
+            <!--</div>-->
+        </nav>
+        <!-- /main nav -->
+    </div>
+</header>
+
+<section class="global-page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h2>“Сириус-Д“ - универсален материал за изграждане на тъканите	</h2>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--=======================================
+=            Blog Left sidebar            =
+========================================-->
+
+<section id="blog-full-width">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-8">
+                <article class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">
+                    <div class="blog-post-image">
+                        <a href="post-fullwidth.html"><img class="img-responsive" src="images/blog/dosage.jpg" alt="" /></a>
+                    </div>
+                    <div class="blog-content">
+                        <h2 class="blogpost-title">
+                            <h3 class="text-center">Доза на “Сириус-Д“</h3>
+                        </h2>
+                        <br>
+
+                        <p>Съдържанието на една опаковка е 100 грама и се равнява на 20 супени лъжици от сместа.
+                            <span>1 супена лъжица от прахообразната смес се равнява на около 5 грама.</span>
+                            <span>Определената доза се приема 1 час преди хранене, разтворена в течност.</span>
+                        </p>
+                        <br>
+                        <div class="text-center">
+
+                        <!-- <img src="images/blog/doza.png" class=" float-right" class="img-responsive" > -->
+                        </div>
+                        <h4 class="text-center" style="text-decoration: underline">Посочената на опаковката доза е за ПРОФИЛАКТИКА и ПОДЪРЖАНЕ:</h4>
+                        <p>По 0,25гр. на килограм телесно тегло ДНЕВНО! Това се равнява на 1 супена лъжица за 20 кг. телесно тегло.
+                            Дозата се определя според килограм телесно тегло и според състоянието: хронично, остро, по-тежко.
+                        </p>
+                        <h4 class="text-center" style="text-decoration: underline">Свържете се с наш консултант за уточнение!</h4>
+
+                    </div>
+                </article>
+                <article class="wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">
+                    <div class="blog-post-image">
+                        <a href="post-fullwidth.html"><img class="img-responsive" src="images/blog/eating.jpg" alt="" /></a>
+                    </div>
+                    <div class="blog-content">
+                        <h2 class="blogpost-title">
+                            <a href="post-fullwidth.html">Правилното хранене</a>
+                        </h2>
+                        <div class="blog-meta">
+                            <span>Dec 11, 2018</span>
+                            <span> <a href="">Светлана Георгиева</a></span>
+
+                        </div>
+
+                        <p class="western" lang="bg-BG" style="margin-bottom: 0in;">&nbsp; <span style="font-family: arial,helvetica,sans-serif; font-size: 14pt;">За да подобрите здравето си, ви предлагаме да си изберете диета за добро усвояване. Два вида такива са <strong><span style="color: #800000;"><span style="color: #800000;">разделното хранене</span></span></strong> и диетата на <a href="http://star05.net/infusions/booklib/book.php?book_id=101&amp;action=download" target="_blank" rel="noopener"><strong><span style="color: #993300;"><span style="color: #993300;">Бари Сиърс описана в книгата „Зоната“</span></span></strong></a>. (<span style="color: #800000;"><a href="z/dieta211012belt.xls" target="_blank"><span style="color: #800000;">примерна зонова диета</span></a></span>) При тях организмът ви ще може да усвоява значително повече и по-добре белтъчини, необходими за изграждането на всички тъкани. За да изберете подходящата диета, ви предлагаме да направите прост опит за проверка дали имате лесно усвояване при комбиниране на животински белтъчни и въглехидратни храни. Животински белтъчни храни са риба, месо, сирене, кашкавал, яйца и подобни. Въглехидратни са хляб, жито, ориз, картофи и др. Можете с няколко хранения да проверите как се чувствате, когато ядете сирене и кашкавал с хляб, и с няколко хранения същите само със салата. Също така можете да направите няколко хранения с месо с хляб, ориз, картофи и месо със салата. Ако установите, че когато ядете заедно&nbsp; животински белтъчни и въглехидратни храни усещате тежест 1-2 часа след хранене, ви предлагаме да започнете да се храните разделно. Разделно, значи да ядете животинските белтъчни храни само със салата. Ако организмът ви успява да усвоява и синтезира необходимите му белтъчини, с течение на времето може да отпадне необходимостта да приемате “Сириус-Д“. Ако организмът ви не усвоява приетите белтъчини и/или не синтезира необходимите му белтъчини, ще е наложително да продължите с приема на лесноусвоимите белтъчини в “Сириус-Д“. Препоръчително е ежедневно да правите сметка на количеството и вида приемани белтъчини, за да сте сигурни, че не приемате повече или по-малко от необходимото ви, което с течение на времето може да доведе до някакво заболяване. Препоръчително е да си направите изследвания за достатъчни количества витамини и минерали. Недостигът или излишъкът им може да възпрепятства успешното действие на “Сириус-Д“. Ако имате недостиг на витамин С и сяра е препоръчително да засилите приема на храни които ги съдържат, защото те участват в синтеза на необходимите за организма белтъчини. За пресмятане на количеството и вида белтъчини, които са ви необходими за деня се посъветвайте с личния си лекар. Това количество зависи от възрастта ви и двигателния ви режим. Трябва да се храните така, че сумата от белтъчините в храната ви и тези в приеманото количество "Сириус-Д" да е равна на необходимия ви дневен прием определен от лекаря.</span></p>
+                        <p class="western" lang="bg-BG" style="margin-bottom: 0in;">&nbsp; <span style="font-family: Arial,sans-serif; font-size: 14pt; color: #000000;">В резултат на прилагането на диетите ще подобрите усвояването на белтъчини, и ще можете и ще е наложително да намалите общото количество приемана храна. Това ще се отрази положително на здравето ви и на джоба ви.</span></p>
+                        <p class="western" lang="bg-BG" style="margin-bottom: 0in;"><span style="font-family: Arial,sans-serif; font-size: 14pt; color: #000000;">Факти и възможности за храненето</span></p>
+                        <p><span style="font-family: arial,helvetica,sans-serif; font-size: 14pt;">&nbsp;1. Живите (суровите) храни съдържат ензими, съдействащи на храносмилането и усвояването. Загряването на храната над 45 градуса Целзий унищожава тези ензими. Хранене с повече живи храни е по-здравословно, защото подобрява храносмилането и усвояването, и е по-бързо и по-евтино.<br /></span></p>
+                        <p><span style="font-family: arial,helvetica,sans-serif; font-size: 14pt;">2. Най-много лесноусвоими аминокиселини ( градивните елементи на белтъчините ) се съдържат в киснатите за 12-24 часа ядки и семена, кълновете и пониците.</span></p>
+                        <p><span style="font-family: arial,helvetica,sans-serif; font-size: 14pt;">3. Можете да си изберете диета, да я изпробвате и да
+                        <p><span style="font-family: arial,helvetica,sans-serif; font-size: 14pt;">4. При варене на месо с костите и кокалите се извличат най-много хранителни вещества.</span></p>
+                        <p><span style="font-family: arial,helvetica,sans-serif; font-size: 14pt;">5. С възрастта и/или по други причини отделянето на храносмилателни ензими намалява и се влошават храносмилането и усвояването. Приемането на храносмилателни ензими донякъде въстановява тази липса.<br /></span></p>
+                        <p><strong><span style="font-family: arial,helvetica,sans-serif; font-size: 14pt; color: #993300;">6. Шоколадът и какаото пречат на действието на Сириус-Д. - <span style="color: #ff0000;">Това се оказа невярно, професорът го отрече. Така, че яжте си спокойно шоколад. :)</span><br /></span></strong></p>
+                        <p><strong><span style="font-family: arial,helvetica,sans-serif; font-size: 14pt; color: #993300;">7. Препоръчително е олиото да се добавя след като свалите ястието от огъня.</span></strong></p>
+                        <p><span style="font-family: arial,helvetica,sans-serif; font-size: 14pt;">8. Белтъчни ( животински - месо, сирене, кашкавал, яйца и растителни - ядки и семена ) и <span style="font-family: arial,helvetica,sans-serif; font-size: 14pt;">белтъчно-въглехидратни храни ( боб, леща, грах, тахан и нахут )</span> се ядат само със салата, не с мазнини и/или въглехидрати - хляб, ориз, картофи<br /></span></p>
+                        <p><span style="font-family: arial,helvetica,sans-serif; font-size: 14pt;">9. Различните видове белтъчни храни ( млечни, месни, яйца и растителни ) се ядат всяка отделно<br /></span></p>
+
+                        <p><span style="font-family: arial,helvetica,sans-serif; font-size: 14pt;"> 10.Кисели плодове, захари и въглехидрати се ядат всяко отделно</span></p>
+
+                </article>
+
+
+
+            </div>
+            <div class="col-md-4">
+                <div class="sidebar">
+
+                    <div class="author widget" style="font-family: Roboto, sans-serif; font-weight: bolder"  >
+                        <img class="img-responsive" src="images/blog/j3.jpg">
+                        <div class="author-body text-center">
+                            <div class="author-img">
+                                <img src="images/author/creator.jpg">
+                            </div>
+                            <div class="author-bio" style="font-family: Roboto, sans-serif; font-weight: bolder">
+                                <h3>Проф. Димитър Димитров</h3>
+                                <h4>За  създателя</h4>
+                                <p style="font-family: Roboto, sans-serif; font-weight: 700; font-size: 15px">Професор Димитров е роден през 1935 г. в с. Сенник, Габровски окръг, България</p>
+                                <p style="font-family: Roboto, sans-serif; font-weight: 700; font-size: 15px">След завършване на средно образование заминава за СССР, където, през 1959 г., завършва с отличие висше образование със
+                                    специалност „Технология на химичните влакна“ в Ленинградския текстилен институт.</p>
+                                <p style="font-family: Roboto, sans-serif; font-weight: 700; font-size: 15px"> При завръщането си в България през 1959 г. започва работа във Висшия химико-технологичен институт в София, България.</p>
+                                <p style="font-family: Roboto, sans-serif; font-weight: 700; font-size: 15px">През 1965 г. отново заминава за СССР и през 1969 г. защитава кандидатска дисертация в Московския текстилен институт
+                                    и работи като научен сътрудник в катедра „Технология на химическите влакна“ на същия институт.</p>
+                                <p style="font-family: Roboto, sans-serif; font-weight: 700; font-size: 15px">През 1970 г. се завръща в България и започва работа като научен сътрудник в Института по целулоза и продължава като асистент, доцент и професор във Висшия химико-технологичен институт в София.
+                                    В същият институт защитава дисертация и получава научно звание „Доктор на техническите науки“.</p>
+                                <p style="font-family: Roboto, sans-serif; font-weight: 700; font-size: 15px">През 1980 г. е удостоен с най-високото държавно отличие на НР България -Димитровска награда за постиженията си
+                                    в разработката на био-медицински материали със специално предназначение,
+                                    които и до днешен ден нямат аналог.</p>
+                                <p style="font-family: Roboto, sans-serif; font-weight: 700; font-size: 15px">От 1985 г. професор Димитров е заместник-директор на Института за специални влакна и биологически активни материали,
+                                    който, в сътрудничество с Министерството на отбраната и
+                                    Висшата военно-медицинска академия създават редица разработки, патентовани и прилагани в медицината с днешна дата в цял свят.</p>
+                                <p style="font-family: Roboto, sans-serif; font-weight: 700; font-size: 15px">През 1995 г. професор Димитров създава своя компания, която, използвайки огромния си научен и практически опит на
+                                    създателя си, разработва продукти в областта на медицината. Един от тях е хранителната добавка Сириус-Д.
+                                    След продължителен период на експериментално приложение,
+                                    продуктът е пуснат на пазара като получава изключително положителни отзиви от потребителите.</p>
+                                <p style="font-family: Roboto, sans-serif; font-weight: 700; font-size: 15px">От 2011 до 2015 г. ръководеният от професор Димитров екип работи по усъвършенстването на продукта Сириус-Д, в резултат на което:</p>
+                                <p style="font-family: Roboto, sans-serif; font-weight: 700; font-size: 15px">От 2016 г. на пазара е новата гама на хранителните добавки с марката Сириус-Д.</p>
+                                <p style="font-family: Roboto, sans-serif; font-weight: 700; font-size: 15px">Професор Димитров е удостоен с много български и международни награди и отличия.
+                                    Има над 250 авторски свидетелства, автор е на над 240 научни публикации и притежава 15 патента.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <br><br><br><br>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--====  End of Blog Left sidebar  ====-->
+<section id="feature">
+    <div class="container-fluid">
+        <div class="section-heading">
+            <h1 class="title wow fadeInDown" data-wow-delay=".3s">Информация </h1>
+            <p class="wow fadeInDown" data-wow-delay=".5s">
+                Полезна информация за Сириус-Д и контакти с дистрибуторa
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-lg-4 col-xs-12">
+                <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="900ms">
+                    <div class="media-left">
+                        <div class="icon">
+                            <i class="ion-ios-barcode-outline"></i>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Линии за връзка</h4>
+                        <p> <span style="color: #ee793c">Vivacom: &nbsp;</span>  <span>0877-55-53-19</span></p>
+                        <p> <span style="color: #ee793c">Vivacom: &nbsp;</span>  <span>0876-21-21-10</span></p>
+                        <p> <span style="color: #644aee">Globul: &nbsp&nbsp&nbsp&nbsp;</span>  <span>0896-097-428</span></p>
+                        <p> <span style="color: #2ae110">Mtel: &nbsp &nbsp &nbsp &nbsp&nbsp;</span>  <span>0889-190-839</span> </p>
+                        <p>   ДОСТАВКА БЕЗ ПОЧИВЕН ДЕН!   </p>
+                        <p><span  style="color: #ee793c"> SKYPE: </span> <span >  sirius-d  </span>   </p>
+                        <p><span  style="color: #ee793c"> EMAIL: </span> <span >   sirius7@abv.bg   </span>   </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 col-xs-12">
+                <div class="media wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+                    <div class="media-left">
+                        <div class="icon">
+                            <a href="https://www.facebook.com/SiriusdHolistic/" class="Facebook">
+                                <i class="ion-social-facebook"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><a href="https://www.facebook.com/SiriusdHolistic/">СИРИУС-Д Фейсбук </h4>
+                        <p>Здравно консултативен екип с участието на създателя на храната - проф. Димитров</p>
+
+                </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 col-xs-12">
+                <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="600ms">
+                    <div class="media-left">
+                        <div class="icon">
+                            <i class="ion-ios-lightbulb-outline"></i>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Консултации и поръчки: 0876-21-21-10 - Здравен консултант</h4>
+                        <p>Цените са в зависимост от количеството. ОТСТЪПКИ ПОЛУЧАВАТ ВСИЧКИ!</p>
+                        <h5>Работно време: от 8.30 до 20 часа без почивен ден </h5>
+                        <h5>Доставка до Ваш адрес в цялата страна</h5>
+                        <p>Цените са в зависимост от количеството. ОТСТЪПКИ ПОЛУЧАВАТ ВСИЧКИ!</p>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+{% endblock %}

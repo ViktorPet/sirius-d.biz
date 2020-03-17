@@ -1,0 +1,33 @@
+{% extends "layout.html.twig" %}
+
+{% block section_content %}
+<section class="global-page-header">
+  <div class="container">
+    <div class="row">
+      {% if success is not null%}
+        {% if success %}
+          <h3> Поръчката ви е получена</h3>
+
+          <p>Номер на поръчка: <span> {{ details['order_id'] }}</span></p>
+          <p>Дата: <span> {{ details['date'] }}</span></p>
+          <p>Всичко: <span> {{ details['total'] }}</span></p>
+          <p> Метод на плащане:</p>
+          <p> Директен банков трансфер</p>
+          <br>
+          <p> Направете плащане директно по нашата банкожа сметка. Моля използвайте
+          номера на поръчката като референция за плащането. Вашата поръчка няма да бъде изпратена докато не се получи трансфера</p>
+          <p>Банкови детайли:</p>
+          <p>Bank:</p>
+          <p>УНИКРЕДИТ БУЛБАНК АД</p>
+          <p>IBAN:</p>
+          <p>BG63UNCR70001522524225</p>
+          <p>BIC:</p>
+          <p>UNCRBGSF</p>
+        {% else %}
+        {% endif %}
+      {% endif %}
+
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,120 @@
+<!-- <div class="col-sm-6 col-md-3">
+  <div class="thumbnail">
+    <img src="images/blog/sirius-light-2.png" alt="...">
+    <div class="caption">
+      <h4  style="color:#f45200; text-align:center;font-weight:bold;">СИРИУС-Д LIGHT</h4>
+      <p  style="color:#f45200; text-align:center;">Препоръчителен при поддържащ прием. Подходящ за потребители с чувствителен стомах и деца</p>
+      <br>
+     <p style=" text-align:center;"><a href="#" class="btn btn-primary" role="button">Поръчай Сега</a> </p>
+    </div>
+  </div>
+</div>
+<div class="col-sm-6 col-md-3">
+  <div class="thumbnail">
+    <img src="images/blog/sirius-sport-3.png" alt="...">
+    <div class="caption">
+      <h4 style="color: #002f8c; text-align:center;font-weight:bold;">СИРИУС-Д SPORT</h4>
+      <p style="color:  #002f8c; text-align:center;">Имуностимулатор. Подходящ както за активни спортисти и хора подложени на тежки физически натоварвяния и травми</p>
+        <p style=" text-align:center;"><a href="#" class="btn btn-primary" role="button">Поръчай Сега</a> </p>
+    </div>
+  </div>
+</div>
+<div class="col-sm-6 col-md-3">
+  <div class="thumbnail">
+    <img src="images/blog/sirius-intense-4.png" alt="...">
+    <div class="caption">
+      <h4 style="color:#5f0002; text-align:center;font-weight:bold;">СИРИУС-Д  INTENSE</h4>
+      <p style="color:#5f0002; text-align:center;">За потребители със силно изтощен организъм в следствие
+           на тежки заболявания или прекарано оперативно лечение.</p>
+      <p style=" text-align:center;"><a href="#" class="btn btn-primary" role="button">Поръчай Сега</a> </p>
+    </div>
+  </div>
+</div> -->
+
+
+
+
+
+$(document).ready( function(){
+    $('img#intense').click( function(){
+
+        var atr = $(this).attr('src');
+
+        $.ajax({
+            url:'/cart',
+            type: 'POST',
+            data: { 'atr' : atr},
+            dataType: 'JSON',
+            success: function(response){
+                console.log(response);
+
+                  if(response){
+                  var id = response['id'];
+                  var name = response['name']
+                  var price = response['price'];
+                  var image = response['image'];
+                  var short_description = response['short_description'];
+                  var description = response['description'];
+
+                //  alert(id);
+
+                   $('h2.product-title').text(name);
+                   $('.product-price').text(price);
+                   $('.product-description').text(short_description);
+                   $('input#id').val(id);
+
+                  }
+
+               }
+
+
+
+
+
+
+    });
+
+
+
+    });
+});
+
+
+<div class="col-md-7">
+    <div class="single-product-details">
+        <h2 class='product-title'><?php echo ($result == null)? "Select Product": $result['name'];  ?></h2>
+
+        <p class="product-price"><?php echo ($result == null)? " ": $result['price']; ?>лв</p>
+
+        <p class="product-description mt-20">
+            <?php echo ($result == null)? " ":$result['short_description']; ?>
+        </p>
+
+
+
+
+
+
+        var nextpage = '<form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputFile">File input</label>
+              <input type="file" id="exampleInputFile">
+              <p class="help-block">Example block-level help text here.</p>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Check me out
+              </label>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>';
+
+        $("<p> Text Here </p>").appendTo('('div#add');
